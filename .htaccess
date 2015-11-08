@@ -1,0 +1,52 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.whidev\.com [NC]
+RewriteRule ^(.*)$ http://whidev.com/$1 [L,R=301]
+SetEnvIfNoCase Referer darodar.com spam=yes
+SetEnvIfNoCase Referer buttons-for-website.com spam=yes
+SetEnvIfNoCase Referer BlackHatWorth.com spam=yes
+SetEnvIfNoCase Referer domination.ml spam=yes
+SetEnvIfNoCase Referer domination.ml spam=yes
+SetEnvIfNoCase Referer floating-share-buttons.com spam=yes 
+SetEnvIfNoCase Referer traffic2money.com spam=yes 
+SetEnvIfNoCase Referer theguardlan.com spam=yes 
+SetEnvIfNoCase Referer sexyali.com spam=yes 
+SetEnvIfNoCase Referer 4webmasters.org spam=yes 
+SetEnvIfNoCase Referer site35.simple-share-buttons.com spam=yes 
+SetEnvIfNoCase Referer forum.topic58176163.darodar.com spam=yes
+SetEnvIfNoCase Referer http://blackhatworth.com/marketing/lounge/730430-apple-com-analytics-referral-traffic.html.com spam=yes
+SetEnvIfNoCase User-Agent blackhatworth.com spam=yes
+SetEnvIfNoCase User-Agent blackhatworth.com/marketing/lounge/730430-apple-com-analytics-referral-traffic.html spam=yes
+Order allow,deny
+Allow from all
+Deny from env=spam
+<IfModule mod_mime.c>
+ AddType application/x-javascript .js
+ AddType text/css .css
+ AddType image/svg+xml svg svgz
+ AddEncoding gzip svgz
+</IfModule>
+<IfModule mod_deflate.c>
+ AddOutputFilterByType DEFLATE text/css application/x-javascript text/x-component text/html text/richtext image/svg+xml text/plain text/xsd text/xsl text/xml image/x-icon application/javascript
+ <IfModule mod_setenvif.c>
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+ </IfModule>
+ <IfModule mod_headers.c>
+  Header append Vary User-Agent env=!dont-vary
+ </IfModule>
+</IfModule>
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresDefault "access plus 2 days"
+</IfModule>
+## EXPIRES CACHING ##
