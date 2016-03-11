@@ -30,7 +30,7 @@ $(window).on('load', function() {
 });
 
 $('#contact').click(function(){
-	$(this).html('Email me at: whiplashoo721@gmail.com');
+	$(this).html('Email me at: contact@whidev.com');
 });
 })
 

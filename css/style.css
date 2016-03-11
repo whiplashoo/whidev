@@ -39,7 +39,7 @@ hr {
 	color:#2f2e33;
 	font-family: 'Raleway';
 }
-@media screen and (max-width:550px) {
+@media screen and (max-width:798px) {
 	#roll, .clickme {
 		display:none;
 	}
@@ -50,6 +50,11 @@ hr {
 	background-color: #3a5199;
 	color:#f1f1f1;
 }
+@media screen and (max-width:798px) {
+	.profile {
+		text-align: center;
+	}
+}
 .profile img {
 	width:200px;
 	border-radius:50%;
@@ -59,12 +64,15 @@ hr {
 	margin-top: 15px;
 	margin-right:20px;
 }
-.social{
+.social {
 	float:right;
-	margin-top:7px;
 }
-.profile .section-heading {
-	float:left;
+.social h2 {
+	margin-top:7px;
+	float:right;
+}
+.social a{
+	text-decoration: none;
 }
 
 /* Portfolio
@@ -84,11 +92,14 @@ hr {
 		border:none;
 	}
 }
+.project-row {
+	margin-bottom:1em;
+}
 .project {
 	text-align: center;
 }
 .project p, .project code {
-	text-align: justify;
+
 }
 .project p {
 	height: 125px;
@@ -102,7 +113,7 @@ hr {
 		margin-top:40px;
 	}
 	.project {
-		margin-top:20px;
+		margin-top:4em;
 	}
 	.project p {
 		height: auto;

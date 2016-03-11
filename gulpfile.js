@@ -8,12 +8,6 @@ notify = require('gulp-notify'),
 livereload = require('gulp-livereload'),
 del = require('del');
 
-
-
-
-
-
-
 gulp.task('default', function() {
     gulp.start('styles','scripts');
 });
