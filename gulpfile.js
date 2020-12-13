@@ -1,39 +1,52 @@
-var gulp = require('gulp'),
-minifycss = require('gulp-minify-css'),
-jshint = require('gulp-jshint'),
-uglify = require('gulp-uglify'),
-rename = require('gulp-rename'),
-concat = require('gulp-concat'),
-notify = require('gulp-notify'),
-livereload = require('gulp-livereload'),
-del = require('del');
+const { task, src, dest, parallel, series, watch } = require('gulp');
+const terser = require('gulp-terser');
+const rename = require('gulp-rename');
+const changed = require('gulp-changed');
+const cssnano = require('gulp-cssnano');
+const browserSync = require('browser-sync').create();
+const autoprefixer = require('gulp-autoprefixer');
 
-gulp.task('default', function() {
-    gulp.start('styles','scripts');
-});
-
-gulp.task('styles', function() {
-  return gulp.src('css/*.css')
-  .pipe(minifycss({compatibility: 'ie8'}))
-  .pipe(rename({suffix: '.min'}))
-  .pipe(gulp.dest('dist/css/'));
-});
-gulp.task('scripts', function() {
-  return gulp.src('js/*.js')
+function jsPipes() {
+  src('js/*.js')
   .pipe(concat('all.js'))
   .pipe(uglify())
   .pipe(rename({suffix: '.min'}))
   .pipe(gulp.dest('dist/js'));
-});
-gulp.task('watch', function() {
+      return src('js/*.js')
+        .pipe(terser())
+        .pipe(rename({
+            extname: '.min.js'
+        }))
+        .pipe(dest('dist/js/'))
+        .pipe(browserSync.stream());
+}
 
-  // Watch .css files
-  gulp.watch('css/*.css', ['styles']);
+function cssPipes() {
+    const source = "css/*.css";
+    return src(source)
+        .pipe(changed(source))
+        .pipe(autoprefixer({
+            overrideBrowserslist: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(rename({
+            extname: '.min.css'
+        }))
+        .pipe(cssnano())
+        .pipe(dest('dist/css/'))
+        .pipe(browserSync.stream());
+}
 
-  // Watch .js files
-  gulp.watch('js/*.js', ['scripts']);
+function browserSyncTask() {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+}
 
-  // Watch image files
-  gulp.watch('src/images/**/*', ['images']);
-
-});
+function watchFiles() {
+    watch('js', jsPipes);
+    watch('css', cssPipes);
+}
+exports.watch = parallel(watchFiles, browserSyncTask);

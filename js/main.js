@@ -1,15 +1,5 @@
 $(document).ready(function(){
-	// $(".project").click(function(){
-	// 	window.location = $(this).find("a:first").attr("href");
-	// 	return false;
-	// });
 
-	// // Show URL on Mouse Hover
-	// $(".project").hover(function () {
-	// 	window.status = $(this).find("a:first").attr("href");
-	// }, function () {
-	// 	window.status = "";
-	// });
 
 /*======= Skillset *=======*/
 
