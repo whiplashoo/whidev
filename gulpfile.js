@@ -5,14 +5,10 @@ const changed = require('gulp-changed');
 const cssnano = require('gulp-cssnano');
 const browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
+const concat = require('gulp-concat');
 
 function jsPipes() {
-  src('js/*.js')
-  .pipe(concat('all.js'))
-  .pipe(uglify())
-  .pipe(rename({suffix: '.min'}))
-  .pipe(gulp.dest('dist/js'));
-      return src('js/*.js')
+    return src('js/*.js')
         .pipe(terser())
         .pipe(rename({
             extname: '.min.js'
@@ -22,9 +18,8 @@ function jsPipes() {
 }
 
 function cssPipes() {
-    const source = "css/*.css";
-    return src(source)
-        .pipe(changed(source))
+    return src("css/*.css")
+        .pipe(concat('all.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 2 versions'],
             cascade: false
@@ -46,7 +41,7 @@ function browserSyncTask() {
 }
 
 function watchFiles() {
-    watch('js', jsPipes);
+    //watch('js', jsPipes);
     watch('css', cssPipes);
 }
 exports.watch = parallel(watchFiles, browserSyncTask);
