@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -9,11 +7,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="154.28572"
-   height="154.28572"
+   width="600"
+   height="315"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    sodipodi:docname="logo.svg"
    inkscape:export-filename="C:\Users\Whiplashoo\Desktop\Projects\whidev\img\logo.png"
    inkscape:export-xdpi="90"
@@ -27,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="139.35056"
-     inkscape:cy="47.635347"
+     inkscape:zoom="0.70000001"
+     inkscape:cx="128.18019"
+     inkscape:cy="191.06145"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -37,11 +35,12 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -58,28 +57,61 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-288.80211,-248.42752)">
-    <path
-       sodipodi:type="arc"
-       style="fill:#2f2e33;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       id="path3759"
-       sodipodi:cx="-82.14286"
-       sodipodi:cy="111.03434"
-       sodipodi:rx="90.714287"
-       sodipodi:ry="90.714287"
-       d="m 8.5714264,111.03434 c 0,50.10012 -40.6141694,90.71429 -90.7142864,90.71429 -50.10012,0 -90.71429,-40.61417 -90.71429,-90.71429 0,-50.100117 40.61417,-90.714287 90.71429,-90.714287 50.100117,0 90.7142864,40.61417 90.7142864,90.714287 z"
-       transform="matrix(0.8503937,0,0,0.8503937,435.79874,231.14747)" />
-    <text
-       xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#33c3f0;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana"
-       x="307.40762"
-       y="367.08209"
-       id="text2985"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan2987"
-         x="307.40762"
-         y="367.08209"
-         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#33c3f0;fill-opacity:1;font-family:Raleway;-inkscape-font-specification:Raleway">w</tspan></text>
+     transform="translate(432.75766,-175.95906)">
+    <rect
+       style="fill:#2f2e33;fill-opacity:1;stroke-width:7.68494;stroke-linejoin:round"
+       id="rect917"
+       width="600"
+       height="315"
+       x="-432.75766"
+       y="175.95906"
+       rx="4.2639594"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g915"
+       transform="matrix(1.1954439,0,0,1.1954439,-698.8388,-188.66663)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.36523px;line-height:0%;font-family:Verdana;-inkscape-font-specification:Verdana;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#33c3f0;fill-opacity:1;stroke:none;stroke-width:0.697102"
+         x="322.69424"
+         y="472.92532"
+         id="text2985"><tspan
+           sodipodi:role="line"
+           id="tspan2987"
+           x="322.69424"
+           y="472.92532"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:100.383px;line-height:1.25;font-family:Raleway;-inkscape-font-specification:Raleway;fill:#33c3f0;fill-opacity:1;stroke-width:0.697102"><tspan
+   style="fill:#ffffff;stroke-width:0.697102"
+   id="tspan833">whi</tspan>dev</tspan></text>
+      <g
+         id="g872"
+         transform="matrix(0.96197748,0,0,0.96197748,-84.729018,113.51973)">
+        <rect
+           style="fill:#ffffff;stroke-width:14.0915;stroke-linejoin:round"
+           id="rect874"
+           width="20.640165"
+           height="20.640165"
+           x="390.36981"
+           y="297.14136"
+           rx="5.6366124" />
+        <rect
+           style="fill:#ffffff;stroke-width:14.0915;stroke-linejoin:round"
+           id="rect874-4"
+           width="20.640165"
+           height="20.640165"
+           x="390.36981"
+           y="325.69949"
+           rx="5.6366124" />
+        <rect
+           style="fill:#ffffff;stroke-width:14.0915;stroke-linejoin:round"
+           id="rect874-0"
+           width="20.640165"
+           height="20.640165"
+           x="390.90359"
+           y="354.25769"
+           rx="5.6366124" />
+      </g>
+    </g>
   </g>
 </svg>
