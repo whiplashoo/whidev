@@ -38,19 +38,9 @@ a {
 	cursor:pointer;
 	float:right;
 }
-.roll-cont:hover .clickme {
-	color: #33c3f0;
-}
-.clickme {
-	font-weight: bolder;
-	margin-right: 10px;
-	padding-top: 20px;
-	float:right;
-	color:#2f2e33;
-	font-family: 'Raleway';
-}
+
 @media screen and (max-width:798px) {
-	#roll, .clickme {
+	#roll {
 		display:none;
 	}
 }
