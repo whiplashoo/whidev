@@ -104,6 +104,8 @@ a {
 }
 
 
+
+
 /* Portfolio
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .portfolio {
@@ -120,6 +122,9 @@ a {
 @media screen and (max-width:844px) {
 	.projects {
 		border:none;
+	}
+	.cat-hint {
+		display:none;
 	}
 }
 .project-row {
