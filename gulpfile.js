@@ -34,9 +34,8 @@ function cssPipes() {
 
 function browserSyncTask() {
     browserSync.init({
-        server: {
-            baseDir: "./"
-        }
+        proxy: "localhost:8888/whidev", //On Mac  
+        notify: false
     });
 }
 
