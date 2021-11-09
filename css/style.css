@@ -4,7 +4,7 @@
 	color: #2F2E33;
 }
 .section-heading {
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
 }
 .section {
 	padding-top: 1em;
@@ -49,6 +49,7 @@ a {
 .profile {
 	background-color: #3a5199;
 	color:#f1f1f1;
+	font-family: 'Raleway', sans-serif;
 }
 @media screen and (max-width:798px) {
 	.profile {
@@ -98,13 +99,21 @@ a {
     filter: drop-shadow(0 0 2px white);
 }
 
+.profile h1 {
+	font-weight: 400;
+	font-size: 2.5em;
+}
+.profile h2 {
+	font-weight: 400;
+	font-size: 1.5em;
+}
 .profile .button {
-	margin: 0 0 0 20px;
     padding: 0 20px;
 }
 
-
-
+.blog-link {
+	margin-left: 20px;
+}
 
 /* Portfolio
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -221,3 +230,5 @@ a {
 .social a{
 	text-decoration: none;
 }
+
+
