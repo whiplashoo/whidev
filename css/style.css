@@ -51,18 +51,16 @@ a {
 	color:#f1f1f1;
 	font-family: 'Raleway', sans-serif;
 }
-@media screen and (max-width:798px) {
-	.profile {
-		text-align: center;
-	}
-}
+
 .cat-hint {
 	display: none;
 	font-size: 11px;
-	    padding-top: 5px;
+	bottom: -10px;
+	left: 30px;
 }
 .profile:hover .cat-hint {
 	display: block;
+	position: absolute;
 }
 .profile img {
 	width:200px;
@@ -71,6 +69,7 @@ a {
 .image-slider {
 	position:relative;
 	display: inline-block;
+	margin-top: 15px;
 	line-height: 0;
 }
 .image-slider img {
@@ -79,7 +78,9 @@ a {
 }
 .image-slider > div {
 	position: absolute;
-	top: 0; bottom: 0; left: 0;
+	top: 0; 
+	bottom: -10px; 
+	left: 0;
 	width: 13px;
 	max-width: 100%;
 	overflow: hidden;
@@ -88,14 +89,15 @@ a {
 .image-slider > div:before {
 	content: '';
 	display: block;
-	width: 13px; 
+	width: 7px; 
 	height: 13px;
 	overflow: hidden;
 	position: absolute;
 	resize: horizontal;
-	right: 3px; bottom: 3px;
+	right: 0px; 
+	bottom: 0px;
 	background-clip: content-box;
-	    background: linear-gradient(-45deg,#e1e1e1 50%,transparent 0);
+	background: linear-gradient(-45deg,#e1e1e1 50%,transparent 0);
     filter: drop-shadow(0 0 2px white);
 }
 
@@ -232,3 +234,19 @@ a {
 }
 
 
+
+
+@media screen and (max-width:798px) {
+	.profile {
+		text-align: center;
+	}
+	.cat-hint, .cat-img {
+		display: none;
+	}
+	.image-slider > div {
+		display: none;
+	}
+	.profile:hover .cat-hint {
+		display: none;
+	}
+}
