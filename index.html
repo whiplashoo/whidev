@@ -1,238 +1,656 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <title>whidev | Minas Giannekas | Web Developer</title>
-    <meta name="title" content="whidev | Minas Giannekas | Web Developer">
-    <meta name="description" content="Freelance Web and App Developer from Greece. Building great websites and  apps.">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <meta name="theme-color" content="#2f2e33" />
-    <meta property="og:site_name" content="whidev" />
-    <meta property="og:url" content="https://whidev.com" />
-    <meta property="og:title" content="whidev | Minas Giannekas | Web Developer" />
-    <meta property="og:description" content="Freelance Web Developer from Greece. Building great websites and apps." />
-    <meta property="og:image" content="https://whidev.com/img/og_image.png" />
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="600">
-    <meta property="og:image:height" content="315">
-    <style>
-        @font-face{font-family:FontAwesome;src:url(/dist/fonts/fontawesome-webfont.eot?v=4.4.0);src:url(/dist/fonts/fontawesome-webfont.eot?) format("embedded-opentype"),url(/dist/fonts/fontawesome-webfont.woff2?v=4.4.0) format("woff2"),url(/dist/fonts/fontawesome-webfont.woff?v=4.4.0) format("woff"),url(/dist/fonts/fontawesome-webfont.ttf?v=4.4.0) format("truetype"),url(/dist/fonts/fontawesome-webfont.svg?v=4.4.0) format("svg");font-weight:400;font-style:normal}.fa{display:inline-block;font:14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-ellipsis-v:before{content:"\f142"}.fa-envelope:before{content:"\f0e0"}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-size:62.5%}body{margin:0;font-size:1.6em;line-height:1.6;font-weight:400;font-family:Cabin,HelveticaNeue,Helvetica Neue,Helvetica,Arial,sans-serif;color:#222}a{background-color:transparent;color:#3a5199}h1{margin:.67em 0;font-size:4rem;line-height:1.2}img{border:0}.container{position:relative;max-width:960px;margin:0 auto;padding:0 20px}.column,.columns,.container{width:100%;box-sizing:border-box}.column,.columns{float:left}@media (min-width:400px){.container{width:85%;padding:0}}@media (min-width:800px){.container{width:80%}.column,.columns{margin-left:4%}.column:first-child,.columns:first-child{margin-left:0}.four.columns{width:30.6666666667%}.six.columns{width:48%}.eight.columns{width:65.3333333333%}.twelve.columns{width:100%;margin-left:0}.one-third.column{width:30.6666666667%}.two-thirds.column{width:65.3333333333%}}h1,h2,h3,h4,h5{margin-top:0;margin-bottom:2rem;font-weight:300}h1,h2{letter-spacing:-.1rem}h2{font-size:3.6rem;line-height:1.25}h3{font-size:3rem;line-height:1.3;letter-spacing:-.1rem}h4{font-size:2.4rem;line-height:1.35;letter-spacing:-.08rem}h5{font-size:1.8rem;line-height:1.5;letter-spacing:-.05rem}@media (min-width:550px){h1{font-size:5rem}h2{font-size:4.2rem}h3{font-size:3.6rem}h4{font-size:3rem}h5{font-size:2.4rem}}p{margin-top:0;margin-bottom:2.5rem}.button{display:inline-block;height:38px;padding:0 30px;color:#f1f1f1;text-align:center;font-size:11px;font-weight:600;line-height:38px;letter-spacing:.1rem;text-decoration:none;white-space:nowrap;background-color:#3a5199;border-radius:4px;border:1px solid #bbb;box-sizing:border-box;margin-bottom:1rem}.button.button-primary{color:#fff;background-color:#33c3f0;border-color:#33c3f0}.u-max-full-width{max-width:100%;box-sizing:border-box}.container:after,.row:after{content:"";display:table;clear:both}.section-heading{font-family:Raleway,sans-serif}.section{padding-top:1em;padding-bottom:1em}.text-center{text-align:center}.topbar{background-color:#2f2e33;color:#f1f1f1;padding-top:1.5em}.logo{height:50px;line-height:50px}#roll{border-radius:50%;width:63px;height:55px;float:right}.profile{background-color:#3a5199;color:#f1f1f1;font-family:Raleway,sans-serif}.cat-hint{display:none;font-size:11px;bottom:-10px;left:30px}.profile img{width:200px;border-radius:50%}.image-slider{position:relative;display:inline-block;margin-top:15px;line-height:0}.image-slider img{max-width:150px}.image-slider>div{top:0;bottom:-10px;left:0;width:13px;max-width:100%}.image-slider>div,.image-slider>div:before{position:absolute;overflow:hidden;resize:horizontal}.image-slider>div:before{content:"";display:block;width:7px;height:13px;right:0;bottom:0;background-clip:content-box;background:linear-gradient(-45deg,#e1e1e1 50%,transparent 0);filter:drop-shadow(0 0 2px white)}.profile h1{font-weight:400;font-size:2.5em}.profile h2{font-weight:400;font-size:1.5em}.profile .button{padding:0 20px}.blog-link{margin-left:20px}.portfolio{background-color:#f1f1f1;padding-top:2em}.portfolio h5{color:#3a5199}.projects{border-right:1px solid #2f2e33;padding-right:20px}@media screen and (max-width:844px){.projects{border:none}.cat-hint{display:none}}.project-row{margin-bottom:4em}.animated{animation-duration:1s;animation-fill-mode:both}@keyframes a{0%{transform:perspective(400px) rotateY(0);animation-timing-function:ease-out}40%{transform:perspective(400px) translateZ(150px) rotateY(170deg);animation-timing-function:ease-out}50%{transform:perspective(400px) translateZ(150px) rotateY(190deg) scale(1);animation-timing-function:ease-in}80%{transform:perspective(400px) rotateY(1turn) scale(.95);animation-timing-function:ease-in}to{transform:perspective(400px) scale(1);animation-timing-function:ease-in}}.flip{-webkit-backface-visibility:visible!important;-webkit-animation-name:a;backface-visibility:visible!important;animation-name:a}@keyframes b{0%{opacity:0;transform:translateY(-2000px)}60%{opacity:1;transform:translateY(30px)}80%{transform:translateY(-10px)}to{transform:translateY(0)}}.bounceInDown{animation-name:b}@media screen and (max-width:798px){#roll{display:none}.profile{text-align:center}.cat-hint,.cat-img,.image-slider>div{display:none}}
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <title>whidev | Minas Giannekas | Web Developer</title>
+        <meta name="title" content="whidev | Minas Giannekas | Web Developer">
+        <meta name="description" content="Freelance Web and App Developer from Greece. Building great websites and  apps.">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <meta name="theme-color" content="#2f2e33"/>
+        <meta property="og:site_name" content="whidev"/>
+        <meta property="og:url" content="https://whidev.com"/>
+        <meta property="og:title" content="whidev | Minas Giannekas | Web Developer"/>
+        <meta property="og:description" content="Freelance Web Developer from Greece. Building great websites and apps."/>
+        <meta property="og:image" content="https://whidev.com/img/og_image.png"/>
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="600">
+        <meta property="og:image:height" content="315">
+        <style>
+            @font-face {
+                font-family: FontAwesome;
+                src: url("/dist/fonts/fontawesome-webfont.eot?v=4.4.0");
+                src: url("/dist/fonts/fontawesome-webfont.eot?") format("embedded-opentype"),url(/dist/fonts/fontawesome-webfont.woff2?v=4.4.0) format("woff2"),url(/dist/fonts/fontawesome-webfont.woff?v=4.4.0) format("woff"),url(/dist/fonts/fontawesome-webfont.ttf?v=4.4.0) format("truetype"),url(/dist/fonts/fontawesome-webfont.svg?v=4.4.0) format("svg");
+                font-weight: 400;
+                font-style: normal;
+            }
+            .fa {
+                display: inline-block;
+                font: 14px/1 FontAwesome;
+                font-size: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            .fa-ellipsis-v:before {
+                content: "\f142";
+            }
+            .fa-envelope:before {
+                content: "\f0e0";
+            }
+            html {
+                font-family: sans-serif;
+                -ms-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+                font-size: 62.5%;
+            }
+            body {
+                margin: 0;
+                font-size: 1.6em;
+                line-height: 1.6;
+                font-weight: 400;
+                font-family: Cabin,HelveticaNeue,Helvetica Neue,Helvetica,Arial,sans-serif;
+                color: #222;
+            }
+            a {
+                background-color: transparent;
+                color: #3a5199;
+            }
+            h1 {
+                margin: 0.67em 0;
+                font-size: 4rem;
+                line-height: 1.2;
+            }
+            img {
+                border: 0;
+            }
+            .container {
+                position: relative;
+                max-width: 960px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            .column,
+            .columns,
+            .container {
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .column,
+            .columns {
+                float: left;
+            }
+            @media (min-width:400px) {
+                .container {
+                    width: 85%;
+                    padding: 0;
+                }
+            }
+            @media (min-width:800px) {
+                .container {
+                    width: 80%;
+                }
+                .column,
+                .columns {
+                    margin-left: 4%;
+                }
+                .column:first-child,
+                .columns:first-child {
+                    margin-left: 0;
+                }
+                .four.columns {
+                    width: 30.6666666667%;
+                }
+                .six.columns {
+                    width: 48%;
+                }
+                .eight.columns {
+                    width: 65.3333333333%;
+                }
+                .twelve.columns {
+                    width: 100%;
+                    margin-left: 0;
+                }
+                .one-third.column {
+                    width: 30.6666666667%;
+                }
+                .two-thirds.column {
+                    width: 65.3333333333%;
+                }
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+                margin-top: 0;
+                margin-bottom: 2rem;
+                font-weight: 300;
+            }
+            h1,
+            h2 {
+                letter-spacing: -.1rem;
+            }
+            h2 {
+                font-size: 3.6rem;
+                line-height: 1.25;
+            }
+            h3 {
+                font-size: 3rem;
+                line-height: 1.3;
+                letter-spacing: -.1rem;
+            }
+            h4 {
+                font-size: 2.4rem;
+                line-height: 1.35;
+                letter-spacing: -.08rem;
+            }
+            h5 {
+                font-size: 1.8rem;
+                line-height: 1.5;
+                letter-spacing: -.05rem;
+            }
+            @media (min-width:550px) {
+                h1 {
+                    font-size: 5rem;
+                }
+                h2 {
+                    font-size: 4.2rem;
+                }
+                h3 {
+                    font-size: 3.6rem;
+                }
+                h4 {
+                    font-size: 3rem;
+                }
+                h5 {
+                    font-size: 2.4rem;
+                }
+            }
+            p {
+                margin-top: 0;
+                margin-bottom: 2.5rem;
+            }
+            .button {
+                display: inline-block;
+                height: 38px;
+                padding: 0 30px;
+                color: #f1f1f1;
+                text-align: center;
+                font-size: 11px;
+                font-weight: 600;
+                line-height: 38px;
+                letter-spacing: 0.1rem;
+                text-decoration: none;
+                white-space: nowrap;
+                background-color: #3a5199;
+                border-radius: 4px;
+                border: 1px solid #bbb;
+                box-sizing: border-box;
+                margin-bottom: 1rem;
+            }
+            .button.button-primary {
+                color: #fff;
+                background-color: #33c3f0;
+                border-color: #33c3f0;
+            }
+            .u-max-full-width {
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+            .container:after,
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .section-heading {
+                font-family: Raleway,sans-serif;
+            }
+            .section {
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+            .text-center {
+                text-align: center;
+            }
+            .topbar {
+                background-color: #2f2e33;
+                color: #f1f1f1;
+                padding-top: 1.5em;
+            }
+            .logo {
+                height: 50px;
+                line-height: 50px;
+            }
+            #roll {
+                border-radius: 50%;
+                width: 63px;
+                height: 55px;
+                float: right;
+            }
+            .profile {
+                background-color: #3a5199;
+                color: #f1f1f1;
+                font-family: Raleway,sans-serif;
+            }
+            .cat-hint {
+                display: none;
+                font-size: 11px;
+                bottom: -10px;
+                left: 30px;
+            }
+            .profile img {
+                width: 200px;
+                border-radius: 50%;
+            }
+            .image-slider {
+                position: relative;
+                display: inline-block;
+                margin-top: 15px;
+                line-height: 0;
+            }
+            .image-slider img {
+                max-width: 150px;
+            }
+            .image-slider > div {
+                top: 0;
+                bottom: -10px;
+                left: 0;
+                width: 13px;
+                max-width: 100%;
+            }
+            .image-slider > div,
+            .image-slider > div:before {
+                position: absolute;
+                overflow: hidden;
+                resize: horizontal;
+            }
+            .image-slider > div:before {
+                content: "";
+                display: block;
+                width: 7px;
+                height: 13px;
+                right: 0;
+                bottom: 0;
+                background-clip: content-box;
+                background: linear-gradient(-45deg,#e1e1e1 50%,transparent 0);
+                filter:drop-shadow(0 0 2px white);
+            }
+            .profile h1 {
+                font-weight: 400;
+                font-size: 2.5em;
+            }
+            .profile h2 {
+                font-weight: 400;
+                font-size: 1.5em;
+            }
+            .profile .button {
+                padding: 0 20px;
+            }
+            .blog-link {
+                margin-left: 20px;
+            }
+            .portfolio {
+                background-color: #f1f1f1;
+                padding-top: 2em;
+            }
+            .portfolio h5 {
+                color: #3a5199;
+            }
+            .projects {
+                border-right: 1px solid #2f2e33;
+                padding-right: 20px;
+            }
+            @media screen and (max-width:844px) {
+                .projects {
+                    border: none;
+                }
+                .cat-hint {
+                    display: none;
+                }
+            }
+            .project-row {
+                margin-bottom: 4em;
+            }
+            .animated {
+                animation-duration: 1s;
+                animation-fill-mode: both;
+            }
+            @keyframes a {
+                0% {
+                    transform: perspective(400px) rotateY(0);
+                    animation-timing-function: ease-out;
+                }
+                40% {
+                    transform: perspective(400px) translateZ(150px) rotateY(170deg);
+                    animation-timing-function: ease-out;
+                }
+                50% {
+                    transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+                    animation-timing-function: ease-in;
+                }
+                80% {
+                    transform: perspective(400px) rotateY(1turn) scale(.95);
+                    animation-timing-function: ease-in;
+                }
+                to {
+                    transform: perspective(400px) scale(1);
+                    animation-timing-function: ease-in;
+                }
+            }
+            .flip {
+                -webkit-backface-visibility: visible!important;
+                -webkit-animation-name: a;
+                backface-visibility: visible!important;
+                animation-name: a;
+            }
+            @keyframes b {
+                0% {
+                    opacity: 0;
+                    transform: translateY(-2000px);
+                }
+                60% {
+                    opacity: 1;
+                    transform: translateY(30px);
+                }
+                80% {
+                    transform: translateY(-10px);
+                }
+                to {
+                    transform: translateY(0);
+                }
+            }
+            .bounceInDown {
+                animation-name: b;
+            }
+            @media screen and (max-width:798px) {
+                #roll {
+                    display: none;
+                }
+                .profile {
+                    text-align: center;
+                }
+                .cat-hint,
+                .cat-img,
+                .image-slider > div {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
 
-    </style>
-</head>
-
-<body>
-    <div class="section topbar">
-        <div class="container">
-            <div class="row">
-                <div class="one-third column">
-                    <h4 class="section-heading animated bounceInDown logo"><i class="fa fa-ellipsis-v"></i> whi<span style="color:#33c3f0">dev</span> </h4>
-                </div>
-                <div class="two-thirds column">
-                    <div class="roll-cont">
-                        <img class="u-max-full-width" id="roll" src="img/roll.gif" alt="roll" />
+    <body>
+        <div class="section topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="one-third column">
+                        <h4 class="section-heading animated bounceInDown logo">
+                            <i class="fa fa-ellipsis-v"></i> whi<span style="color:#33c3f0">dev</span>
+                        </h4>
+                    </div>
+                    <div class="two-thirds column">
+                        <div class="roll-cont">
+                            <img class="u-max-full-width" id="roll" src="img/roll.gif" alt="roll"/>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="section profile">
-        <div class="container">
-            <div class="row">
-                <div class="four columns text-center">
-                    <div class="image-slider">
-                        <div>
+        <div class="section profile">
+            <div class="container">
+                <div class="row">
+                    <div class="four columns text-center">
+                        <div class="image-slider">
+                            <div>
+                                <picture>
+                                    <source media="(min-width: 900px)" srcset="img/tsofli.png 1x, img/tsofli@2x.png 2x" type="image/png">
+                                    <img src="img/tsofli.png" class="u-max-full-width cat-img" type="image/png" alt="Photo of my cat named Tsofli, lying in a green blanket " width="150" height="150">
+                                </picture>
+                            </div>
                             <picture>
-                            <source media="(min-width: 900px)" srcset="img/tsofli.png 1x, img/tsofli@2x.png 2x" type="image/png">
-                            <img src="img/tsofli.png" class="u-max-full-width cat-img" type="image/png" alt="Photo of my cat named Tsofli, lying in a green blanket " width="150" height="150">
-                        </picture>
+                                <source media="(min-width: 900px)" srcset="img/profile.png 1x, img/profile@2x.png 2x" type="image/png">
+                                <img src="img/profile.png" class="u-max-full-width" type="image/png" alt="My profile picture" width="150" height="150">
+                            </picture>
+                            <span class="cat-hint">Slide to see my cat</span>
                         </div>
-                        <picture>
-                            <source media="(min-width: 900px)" srcset="img/profile.png 1x, img/profile@2x.png 2x" type="image/png">
-                            <img src="img/profile.png" class="u-max-full-width" type="image/png" alt="My profile picture" width="150" height="150">
-                        </picture>
-                        <span class="cat-hint">Slide to see my cat</span>
                     </div>
-                </div>
-                <div class="eight columns">
-                    <h1 class="section-heading burn" data-cont="Minas Giannekas">Minas Giannekas</h1>
-                    <h2 class="section-description">Self-employed app developer. Building on the web, mobile, and desktop. </h2>
-                    <p><a class="button button-primary contact"> <i class="fa fa-envelope"></i> CONTACT ME </a> <a class="button button-primary blog-link" href="https://blog.whidev.com" target="_blank" rel="noopener noreferrer">BLOG</a></p>
+                    <div class="eight columns">
+                        <h1 class="section-heading burn" data-cont="Minas Giannekas">Minas Giannekas</h1>
+                        <h2 class="section-description">Self-employed app developer. Building on the web, mobile, and desktop. </h2>
+                        <p>
+                            <a class="button button-primary contact">
+                                <i class="fa fa-envelope"></i> CONTACT ME </a>
+                            <a class="button button-primary blog-link" href="https://blog.whidev.com" target="_blank" rel="noopener noreferrer">BLOG</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="section portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="six columns projects">
-                    <div class="row">
-                        <h3 class="section-heading">Personal projects</h4>
-                    </div>
-                    <div class="row project-row">
-                        <div class="twelve columns project-desc">
-                            <h5 class="animated flip"><a href="https://www.mapchart.net" target="_blank" rel="noopener noreferrer"> MapChart </a></h5>
-                            <img class="u-max-full-width" src="img/mapchart.png" alt="mapchart">
-                            <p> Web app for creating your own custom map of World, Europe, US, and more with colors and descriptions of your choice. </p>
-                            <p> Developed in 2014, it has since been used by millions of people all over the world. Regularly visited by a diverse audience including students, university teachers, sales executives, business owners, research staff, travelers, and more.</p>
-                            <p>Currently the #1 Google search result in its category and the most complete map-making tool overall. </p>
-                            <code> HTML, CSS, JS &amp; jQuery, PHP, Node.js, Nunjucks, SVG</code>
+        <div class="section portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="six columns projects">
+                        <div class="row">
+                            <h3 class="section-heading">Personal projects</h4>
+                        </div>
+                        <div class="row project-row">
+                            <div class="twelve columns project-desc">
+                                <h5 class="animated flip">
+                                    <a href="https://www.mapchart.net" target="_blank" rel="noopener noreferrer"> MapChart </a>
+                                </h5>
+                                <img class="u-max-full-width" src="img/mapchart.png" alt="mapchart">
+                                <p> Web app for creating your own custom map of World, Europe, US, and more with colors and descriptions of your choice. </p>
+                                <p> Developed in 2014, it has since been used by millions of people all over the world. Regularly visited by a diverse audience including students, university teachers, sales executives, business owners, research staff, travelers, and more.</p>
+                                <p>Currently the #1 Google search result in its category and the most complete map-making tool overall. </p>
+                                <code> HTML, CSS, JS &amp; jQuery, PHP, Node.js, Nunjucks, SVG</code>
+                            </div>
+                        </div>
+                        <div class="row project-row">
+                            <div class="twelve columns project-desc">
+                                <h5 class="animated flip">
+                                    <a href="https://www.historicalmapchart.net" target="_blank" rel="noopener noreferrer"> Historical MapChart </a>
+                                </h5>
+                                <img class="u-max-full-width" src="img/historicalmapchart.png" alt="historical mapchart">
+                                <p> The historical version of MapChart featuring maps from different chronologies in history.</p>
+                                <p> A favorite of history buffs, it includes World War maps, historical USA maps and more.</p>
+                                <code> HTML, CSS, JS &amp; jQuery, PHP, Node.js, Nunjucks, SVG</code>
+                            </div>
+                        </div>
+                        <div class="row project-row">
+                            <div class="twelve columns project-desc">
+                                <h5 class="animated flip">
+                                    <a href="https://app.mapchart.net" target="_blank" rel="noopener noreferrer"> MapChart Mobile App</a>
+                                </h5>
+                                <img class="u-max-full-width" src="img/mapchart_app.png" alt="mapchart mobile app">
+                                <p> Android and iOS app bringing all features of MapChart in a native mobile app. </p>
+                                <p> Developed in 2020, after numerous requests from users of the website, it is now the only map-making mobile app available. Boasting over 50,000 downloads and a high review score (over 4,5 stars) on both the <a href="https://play.google.com/store/apps/details?id=com.whidev.mapchart" target="_blank" rel="noopener">Play Store</a> and the <a href="https://apps.apple.com/us/app/mapchart-app/id1541877062" target="_blank" rel="noopener">App Store</a>. </p>
+                                <code> Flutter, Dart, iOS, Firebase, Android, Kotlin, Swift, ASO </code>
+                            </div>
+                        </div>
+                        <div class="row project-row">
+                            <div class="twelve columns project-desc">
+                                <h5 class="animated flip">
+                                    <a href="https://shortcutkeeper.com" target="_blank" rel="noopener"> Shortcut Keeper</a>
+                                </h5>
+                                <img class="u-max-full-width" src="img/shortcut_keeper.png" alt="shortcut keeper app">
+                                <p> A desktop app that lets you save the keyboard shortcuts you use frequently in your daily tasks. </p>
+                                <p> Developed in 2021, it's a small utility app to help users with remembering and learning keyboard shortcuts. Published in the <a href="https://apps.apple.com/us/app/shortcut-keeper/id1585404175" rel="noopener">Mac App Store</a> for macOS and the <a href="https://www.microsoft.com/store/apps/9nsr8xq43r7q" rel="noopener">Microsoft Store</a> for Windows.</p>
+                                <p> Highly optimized and designed with each platform's design guidelines in mind. </p>
+                                <code> Flutter, Dart, macOS, Windows, desktop app </code>
+                            </div>
+                        </div>
+                        <div class="row project-row">
+                            <div class="twelve columns project-desc">
+                                <h5 class="animated flip">
+                                    <a href="https://createformation.com" target="_blank" rel="noopener noreferrer"> CreateFormation </a>
+                                </h5>
+                                <img class="u-max-full-width" src="img/createformation.png" alt="createformation">
+                                <p> Web app for making football formations with photos of players. </p>
+                                <p> The only formation creator with photos of all players. A database containing 18,000+ current players and 100+ legends. </p>
+                                <code> HTML, CSS, JS &amp; jQuery, Express.js, AWS, Heroku, MongoDB </code>
+                            </div>
                         </div>
                     </div>
-                    <div class="row project-row">
-                        <div class="twelve columns project-desc">
-                            <h5 class="animated flip"><a href="https://www.historicalmapchart.net" target="_blank" rel="noopener noreferrer"> Historical MapChart </a></h5>
-                            <img class="u-max-full-width" src="img/historicalmapchart.png" alt="historical mapchart">
-                            <p> The historical version of MapChart featuring maps from different chronologies in history.</p>
-                            <p> A favorite of history buffs, it includes World War maps, historical USA maps and more.</p>
-                            <code> HTML, CSS, JS &amp; jQuery, PHP, Node.js, Nunjucks, SVG</code>
-                        </div>
-                    </div>
-                    <div class="row project-row">
-                        <div class="twelve columns project-desc">
-                            <h5 class="animated flip"><a href="https://app.mapchart.net" target="_blank" rel="noopener noreferrer"> MapChart Mobile App</a></h5>
-                            <img class="u-max-full-width" src="img/mapchart_app.png" alt="mapchart mobile app">
-                            <p> Android and iOS app bringing all features of MapChart in a native mobile app. </p>
-                            <p> Developed in 2020, after numerous requests from users of the website, it is now the only map-making mobile app available. Boasting over 50,000 downloads and a high review score (over 4,5 stars) on both the <a href="https://play.google.com/store/apps/details?id=com.whidev.mapchart" target="_blank" rel="noopener">Play Store</a> and the <a href="https://apps.apple.com/us/app/mapchart-app/id1541877062" target="_blank" rel="noopener">App Store</a>. </p>
-                            <code> Flutter, Dart, iOS, Firebase, Android, Kotlin, Swift, ASO </code>
-                        </div>
-                    </div>
-                    <div class="row project-row">
-                        <div class="twelve columns project-desc">
-                            <h5 class="animated flip"><a href="https://shortcutkeeper.com" target="_blank" rel="noopener"> Shortcut Keeper</a></h5>
-                            <img class="u-max-full-width" src="img/shortcut_keeper.png" alt="shortcut keeper app">
-                            <p> A desktop app that lets you save the keyboard shortcuts you use frequently in your daily tasks. </p>
-                            <p> Developed in 2021, it's a small utility app to help users with remembering and learning keyboard shortcuts. Published in the <a href="https://apps.apple.com/us/app/shortcut-keeper/id1585404175" rel="noopener">Mac App Store</a> for macOS and the <a href="https://www.microsoft.com/store/apps/9nsr8xq43r7q" rel="noopener">Microsoft Store</a> for Windows.</p>
-                            <p> Highly optimized and designed with each platform's design guidelines in mind. </p>
-                            <code> Flutter, Dart, macOS, Windows, desktop app </code>
-                        </div>
-                    </div>
-                    <div class="row project-row">
-                        <div class="twelve columns project-desc">
-                            <h5 class="animated flip"><a href="https://createformation.com" target="_blank" rel="noopener noreferrer"> CreateFormation </a></h5>
-                            <img class="u-max-full-width" src="img/createformation.png" alt="createformation">
-                            <p> Web app for making football formations with photos of players. </p>
-                            <p> The only formation creator with photos of all players. A database containing 18,000+ current players and 100+ legends. </p>
-                            <code> HTML, CSS, JS &amp; jQuery, Express.js, AWS, Heroku, MongoDB </code>
-                        </div>
-                    </div>
-                </div>
-                <div class="six columns skills">
-                    <h3 class="section-heading"> About </h4>
+                    <div class="six columns skills">
+                        <h3 class="section-heading"> About </h4>
                         <div class="content">
                             <p>
                                 Developing websites and apps for the last 8 years. Having done work for various clients, startups, and businesses.
                             </p>
                             <p>Well-organized person, problem solver, independent worker with an obsession for detail and performance.</p>
-                            <p><strong>Check out my personal projects, websites and apps, as well as my freelance work examples to learn more about what I can offer.</strong></p>
+                            <p>
+                                <strong>Check out my personal projects, websites and apps, as well as my freelance work examples to learn more about what I can offer.</strong>
+                            </p>
                             <p>I occasionally write about web and app development stuff on my <a href="https://blog.whidev.com" target="_blank" rel="noopener noreferrer">blog</a>.</p>
                         </div>
                         <h3 class="section-heading"> Freelancing </h4>
-                            <div class="content">
-                                <p>Examples of past projects I have completed for clients all over the world:</p>
-                                <ul>
-                                    <li>Development of <strong>custom map-making tools</strong> for a campsite, a chess union, a wine distributor and more.</li>
-                                    <li>Designed from scratch <strong>custom SVG maps</strong> for use in public-facing websites.</li>
-                                    <li>Added <strong>e-shop</strong> functionality to existing WordPress websites.</li>
-                                    <li>Customized <strong>WordPress plugins</strong> to extend their functionality.</li>
-                                    <li>Conversion of websites to Google's <strong>AMP HTML</strong> compatible pages.</li>
-                                    <li><strong>WordPress blogs</strong> for individuals and businesses.</li>
-                                    <li><strong>Website speed optimization</strong> for multiple websites.</li>
-                                    <li>Development of minimal <strong>HTML templates</strong> for a WYSIWYG website builder.</li>
-                                    <li>Wrote <strong>custom VBA scripts</strong> to automate extraction of data from large Excel files.</li>
-                                    <li>Developed <strong>Python programs to convert Excel files</strong> to other data formats.</li>
-                                    <li><strong>Redesigned the landing page</strong> for a yoga business to bring more sign-ups and conversions.</li>
-                                    <li>Moved website with over 1,000 pages <strong>from ASP.NET to WordPress on an AWS EC2 instance</strong>.</li>
-                                    <li>Developed <strong>custom Bootstrap dashboard themes</strong>.</li>
-                                </ul>
-                                <p>Always keen to learn new tools and technologies! </p>
-                                <p><strong>If you have a web/app project in mind, get in touch with me, and we can work out the details.</strong></p>
-                                <a class="button button-primary contact"> <i class="fa fa-envelope"></i> CONTACT ME </a>
-                            </div>
-                            <h3 class="section-heading"> Interests </h4>
-                                <div class="content">
-                                    <p>Learning about geography, cartography, and maps in general.</p>
-                                    <p>Reading books, mainly fantasy, history, and computer science. Find me on <a href="https://www.goodreads.com/user/show/58959102-minas" target="_blank" rel="noopener noreferrer">Goodreads</a>. </p>
-                                    <p>Love playing tennis, both for fun and in tournaments. Also a pretty amateur offroad driver and cook.</p>
-                                    <p>Recently adopted <a href="https://www.instagram.com/tsofli_is_intergalactic" target="_blank" rel="noopener noreferrer">a small cat</a> to sit on my laptop while I work (check my profile image for a surprise!).</p>
-                                </div>
-                                <h3 class="section-heading"> Open Source </h4>
-                                    <div class="content">
-                                        <p>Contributing to open source when I find the time. Find me on <a href="https://github.com/whiplashoo" target="_blank" rel="noopener noreferrer">GitHub</a>. My own small projects:</p>
-                                        <ul>
-                                            <li><a href="https://pub.dev/packages/flutter_font_picker" target="_blank" rel="noopener noreferrer">Flutter package for a custom font picker widget.</a></li>
-                                            <li><a href="https://pub.dev/packages/patterns_canvas" target="_blank" rel="noopener noreferrer">Flutter (Dart) library to draw patterns like stripes or dots on Canvas elements or widgets.</a></li>
-                                            <li><a href="https://github.com/whiplashoo/svgtoraphael" target="_blank" rel="noopener noreferrer">SVG to Raphael.js converter.</a></li>
-                                            <li><a href="https://github.com/whiplashoo/ids_to_text_inkscape" target="_blank" rel="noopener noreferrer">Inkscape extension to show path ids as text nodes.</a></li>
-                                            <li><a href="https://github.com/whiplashoo/split-image" target="_blank" rel="noopener noreferrer">A Python package that you can use from the command line to split an image into tiles.</a></li>
-                                        </ul>
-                                    </div>
+                        <div class="content">
+                            <p>Examples of past projects I have completed for clients all over the world:</p>
+                            <ul>
+                                <li>Development of <strong>custom map-making tools</strong> for a campsite, a chess union, a wine distributor and more.</li>
+                                <li>Designed from scratch <strong>custom SVG maps</strong> for use in public-facing websites.</li>
+                                <li>Added <strong>e-shop</strong> functionality to existing WordPress websites.</li>
+                                <li>Customized <strong>WordPress plugins</strong> to extend their functionality.</li>
+                                <li>Conversion of websites to Google's <strong>AMP HTML</strong> compatible pages.</li>
+                                <li>
+                                    <strong>WordPress blogs</strong> for individuals and businesses.</li>
+                                <li>
+                                    <strong>Website speed optimization</strong> for multiple websites.</li>
+                                <li>Development of minimal <strong>HTML templates</strong> for a WYSIWYG website builder.</li>
+                                <li>Wrote <strong>custom VBA scripts</strong> to automate extraction of data from large Excel files.</li>
+                                <li>Developed <strong>Python programs to convert Excel files</strong> to other data formats.</li>
+                                <li>
+                                    <strong>Redesigned the landing page</strong> for a yoga business to bring more sign-ups and conversions.</li>
+                                <li>Moved website with over 1,000 pages <strong>from ASP.NET to WordPress on an AWS EC2 instance</strong>.</li>
+                                <li>Developed <strong>custom Bootstrap dashboard themes</strong>.</li>
+                            </ul>
+                            <p>Always keen to learn new tools and technologies! </p>
+                            <p>
+                                <strong>If you have a web/app project in mind, get in touch with me, and we can work out the details.</strong>
+                            </p>
+                            <a class="button button-primary contact">
+                                <i class="fa fa-envelope"></i> CONTACT ME </a>
+                        </div>
+                        <h3 class="section-heading" style="margin-top:20px"> Speaking </h4>
+                        <div class="content">
+                            <p>Talk on <strong>"Using Flutter to build a native-looking desktop app for macOS and Windows"</strong> for the <a href="https://fluttervikings.com/" target="_blank" rel="noopener noreferrer">FlutterVikings 2022</a> online conference. </p>
+                            <img class="u-max-full-width" style="margin: 5px 20px 10px 0;" src="img/flutter_vikings_talk.png" alt="Presenting a talk for the FlutterVikings 2022 online conference">
+                            <p>
+                                <a href="https://youtu.be/qFHSMISkguw?t=20701" target="_blank" rel="noopener noreferrer">Talk (YouTube)</a>
+                                &nbsp;
+                                <a href="https://www.icloud.com/keynote/0fbkqhj70TUjztwWDzaWbRZWw#Minas_Giannekas_FlutterVikings_talk" target="_blank" rel="noopener noreferrer">Slides</a>
+                            </p>
+                            <p></p>
+                        </div>
+                        <h3 class="section-heading"> Interests </h4>
+                        <div class="content">
+                            <p>Learning about geography, cartography, and maps in general.</p>
+                            <p>Reading books, mainly fantasy, history, and computer science. Find me on <a href="https://www.goodreads.com/user/show/58959102-minas" target="_blank" rel="noopener noreferrer">Goodreads</a>. </p>
+                            <p>Love playing tennis, both for fun and in tournaments. Also a pretty amateur offroad driver and cook.</p>
+                            <p>Recently adopted <a href="https://www.instagram.com/tsofli_is_intergalactic" target="_blank" rel="noopener noreferrer">a small cat</a> to sit on my laptop while I work (check my profile image for a surprise!).</p>
+                        </div>
+                        <h3 class="section-heading"> Open Source </h4>
+                        <div class="content">
+                            <p>Contributing to open source when I find the time. Find me on <a href="https://github.com/whiplashoo" target="_blank" rel="noopener noreferrer">GitHub</a>. My own small projects:</p>
+                            <ul>
+                                <li>
+                                    <a href="https://pub.dev/packages/flutter_font_picker" target="_blank" rel="noopener noreferrer">Flutter package for a custom font picker widget.</a>
+                                </li>
+                                <li>
+                                    <a href="https://pub.dev/packages/patterns_canvas" target="_blank" rel="noopener noreferrer">Flutter (Dart) library to draw patterns like stripes or dots on Canvas elements or widgets.</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/whiplashoo/svgtoraphael" target="_blank" rel="noopener noreferrer">SVG to Raphael.js converter.</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/whiplashoo/ids_to_text_inkscape" target="_blank" rel="noopener noreferrer">Inkscape extension to show path ids as text nodes.</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/whiplashoo/split-image" target="_blank" rel="noopener noreferrer">A Python package that you can use from the command line to split an image into tiles.</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/whiplashoo/dartcula-theme" target="_blank" rel="noopener noreferrer">A VS Code theme, inspired by IntelliJ's Darcula theme, optimized for Dart/Flutter code.</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            <script>
+                (function (i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r;
+                    i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    },
+                    i[r].l = 1 * new Date();
+                    a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                    a.async = 1;
+                    a.src = g;
+                    m
+                        .parentNode
+                        .insertBefore(a, m)
+                })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-58176163-5', 'auto');
-        ga('send', 'pageview');
-        </script>
-        <script>
-        var cb = function() {
-            var h = document.getElementsByTagName('head')[0];
-            var a = document.createElement('link');
-            a.rel = 'stylesheet';
-            a.href = 'dist/css/all.min.css';
-            h.parentNode.insertBefore(a, h);
-            var m = document.createElement('link');
-            m.rel = 'stylesheet';
-            m.href = 'https://fonts.googleapis.com/css?family=Raleway:400,300,700|Cabin:400,700';
-            var n = document.getElementsByTagName('head')[0];
-            n.parentNode.insertBefore(m, n);
-        };
-        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-            webkitRequestAnimationFrame || msRequestAnimationFrame;
-        if (raf) raf(cb);
-        else window.addEventListener('load', cb);
-        </script>
-        <script>
-        (function() {
+                ga('create', 'UA-58176163-5', 'auto');
+                ga('send', 'pageview');
+            </script>
+            <script>
+                var cb = function () {
+                    var h = document.getElementsByTagName('head')[0];
+                    var a = document.createElement('link');
+                    a.rel = 'stylesheet';
+                    a.href = 'dist/css/all.min.css';
+                    h
+                        .parentNode
+                        .insertBefore(a, h);
+                    var m = document.createElement('link');
+                    m.rel = 'stylesheet';
+                    m.href = 'https://fonts.googleapis.com/css?family=Raleway:400,300,700|Cabin:400,700';
+                    var n = document.getElementsByTagName('head')[0];
+                    n
+                        .parentNode
+                        .insertBefore(m, n);
+                };
+                var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+                if (raf) 
+                    raf(cb);
+                else 
+                    window.addEventListener('load', cb);
+            </script>
+            <script>
+                (function () {
 
-            document.querySelectorAll('.contact').forEach(function(contactButton) {
-                contactButton.addEventListener('click', function() {
-                    this.innerHTML = 'Email me at: contact@whidev.com';
-                });
-            });
+                    document
+                        .querySelectorAll('.contact')
+                        .forEach(function (contactButton) {
+                            contactButton.addEventListener('click', function () {
+                                this.innerHTML = 'Email me at: contact@whidev.com';
+                            });
+                        });
 
+                    var doABarrelRoll = function () {
+                        var a = "-webkit-",
+                            b = 'transform:rotate(1turn);',
+                            c = 'transition:2s;';
+                        document.head.innerHTML += '<style id="barell">body{' + a + b + a + c + b + c;
+                    }
 
-            var doABarrelRoll = function() {
-                var a = "-webkit-",
-                    b = 'transform:rotate(1turn);',
-                    c = 'transition:2s;';
-                document.head.innerHTML += '<style id="barell">body{' + a + b + a + c + b + c;
-            }
+                    document
+                        .querySelector('#roll')
+                        .addEventListener('click', function () {
+                            doABarrelRoll();
+                            setTimeout(function () {
+                                let elem = document.querySelector('#barell');
+                                elem
+                                    .parentNode
+                                    .removeChild(elem);
+                            }, 5000);
+                        });
+                })();
+            </script>
+        </body>
 
-
-            document.querySelector('#roll').addEventListener('click', function() {
-                doABarrelRoll();
-                setTimeout(function() {
-                    let elem = document.querySelector('#barell');
-                    elem.parentNode.removeChild(elem);
-                }, 5000);
-            });
-        })();
-        </script>
-</body>
-
-</html>
+    </html>
